@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <!-- Shout out to Mozilla MDN on their number guessing game.
+  I just made some tweaks using the latest javaScript syntax... please upvote if you like it and your feedbacks, comments and suggestions are highly welcomed... thanks -->
+<head>
+<title>Guessing Game</title>
+<meta charset= "utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="gameStyle.css" />
+</head>
+<body>
+<div id="wrapper">
+	<header>
+	  <h2>Guessing Game!!!</h2>
+  	<h3>Guess the random number by picking a number between 1 and 100. You will be notified if your guesses are either too high or too low and your previous guesses will be outputed. You have 7 attempts to guess correctly or the game is over.</h3>
+  </header>  
+  <div class="attempt">
+    <div>Attempts:<span id="attempts"></span></div>
+    <div>Remaining Attempts:<span id="remAtt"></span></div>
+  </div>
+  <div>
+    <div class="input">
+      <input type="number" min=1 max=100 id="guessField" placeholder="input your guess" />
+    </div>
+    <div class="buttons">
+      <div><button>guess</button></div>
+      <div><button>reset</button></div>
+    </div>
+    <div class="paras">
+        <div><span class="left">Low or Hi:</span><span id="lowOrHi"></span></div>
+        <div><span class="left">Previous guesses:</span><span id="prevGuess"></span></div>
+    </div>
+        <div id="ran">Random Number:<br><span id="ranShow"></span></div>
+  </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
